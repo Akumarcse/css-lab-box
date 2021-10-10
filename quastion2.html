@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Question 2
+        </title>
+        <style>
+           .lcs{
+                font-family: Bahnschrift SemiCondensed;
+           }
+           ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  height: 40vh;
+  flex-grow: 1;
+}
+
+li:last-child {
+  flex-grow: 10;
+}
+img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+img:hover{transform:scale(2,2);transition: 3s transform;}
+@media (max-aspect-ratio: 1/1) {
+  li {
+    height: 30vh;
+  }
+}
+@media (max-height: 480px) {
+  li {
+    height: 80vh;
+  }
+}
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+  ul {
+    flex-direction: row;
+  }
+
+  li {
+    height: auto;
+    width: 100%;
+  }
+  img {
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
+}
+    </style>
+    </head>
+    <body>
+        <h1 class = "lcs">Flex using images...zoom in and zoom out to test</h1>
+        <ul>
+            <li>
+                <img src="file:///C:/Users/A%20kumar/Downloads/pexels-pixabay-461940.jpg" alt="">
+            </li>
+            <li>
+                <img src="file:///C:/Users/A%20kumar/Downloads/pexels-julius-silver-753626.jpg" alt="">
+            </li>
+            <li>
+                <img src="file:///C:/Users/A%20kumar/Downloads/pexels-pixabay-459203.jpg" alt="">
+            </li>
+            <li>
+                <img src="file:///C:/Users/A%20kumar/Downloads/wynand-uys-0_32AIxy1Hk-unsplash.jpg" alt="">
+            </li>
+            <li>
+                <img src="file:///C:/Users/A%20kumar/Downloads/images.jfif" alt="">
+            </li>
+            <li>
+                <img src="file:///C:/Users/A%20kumar/Downloads/pexels-julius-silver-753626.jpg" alt="">
+            </li>
+          
+        </ul>
+        </p>
+    </body>
+</html>
